@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Nov 20 09:29:12 2022
+# Process ID: 2564
+# Current directory: E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13932 E:\Habib University\DLD Digital Logic Design\Lab component\Project\Basys3-Joystick-Interfacing-main\test.xpr
+# Log file: E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/vivado.log
+# Journal file: E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{E:/Habib University/DLD Digital Logic Design/Lab component/Project/Snake Game/Final submission/Code/DS PART 1.srcs/sources_1/new/DSPART1.v} {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Snake Game/Final submission/Code/DS PART 1.srcs/sources_1/new/clkdiv.v} {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Snake Game/Final submission/Code/DS PART 1.srcs/sources_1/new/top.v} {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Snake Game/Final submission/Code/DS PART 1.srcs/sources_1/new/Input.v} {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Snake Game/Final submission/Code/DS PART 1.srcs/sources_1/new/vga640x480.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+update_compile_order -fileset sources_1
+file mkdir E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.srcs/constrs_1/new
+file mkdir E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.srcs/constrs_1/new
+file mkdir E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.srcs/constrs_1/new
+file mkdir E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.srcs/constrs_1/new
+file mkdir {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.srcs/constrs_1/new}
+close [ open {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.srcs/constrs_1/new/top.xdc} w ]
+add_files -fileset constrs_1 {{E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.srcs/constrs_1/new/top.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+set_property target_constrs_file {E:/Habib University/DLD Digital Logic Design/Lab component/Project/Basys3-Joystick-Interfacing-main/test.srcs/constrs_1/new/top.xdc} [current_fileset -constrset]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
